@@ -1,0 +1,88 @@
+@import "../styles/variables.css";
+:root {
+  --color-cream: #f3e9dc;
+  --color-red: #9e1b22;
+  --color-brown: #4b2e2b;
+  --color-white: #ffffff;
+  --color-dark: #1f1a17;
+  --color-soft: #e8d9c8;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-brown);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+main {
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  width: min(1440px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+}
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 400;
+}
+
+/* Títulos fortes */
+h1, h2, h3 {
+  color: var(--color-brown);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+/* h1 destaque máximo */
+h1 {
+  font-weight: 900;
+  letter-spacing: -0.05em;
+}
+
+/* Texto padrão mais leve */
+p {
+  color: rgba(75, 46, 43, 0.78);
+  line-height: 1.8;
+}
+
+/* Microtextos / labels */
+.eyebrow {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-red);
+}

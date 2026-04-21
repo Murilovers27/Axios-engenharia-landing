@@ -1,0 +1,134 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: var(--color-brown);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.header__inner {
+  min-height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.header__brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.header__brand-mark {
+  width: 10px;
+  height: 34px;
+  border-radius: 999px;
+  background: var(--color-red);
+}
+
+.header__logo {
+  color: var(--color-white);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.header__link {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.92rem;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+.header__link:hover {
+  color: var(--color-white);
+}
+
+.header__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 24px;
+  border-radius: 999px;
+  background: var(--color-red);
+  color: var(--color-white);
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.header__cta:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.header__menu-button {
+  display: none;
+  min-height: 44px;
+  padding: 0 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: var(--color-white);
+  background: transparent;
+}
+
+.header__mobile {
+  display: none;
+}
+
+.header__mobile-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 20px 0 28px;
+}
+
+.header__mobile-link {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.header__mobile-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-height: 46px;
+  padding: 0 24px;
+  border-radius: 999px;
+  background: var(--color-red);
+  color: var(--color-white);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+@media (max-width: 1024px) {
+  .header__nav,
+  .header__cta {
+    display: none;
+  }
+
+  .header__menu-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header__mobile {
+    display: block;
+    background: var(--color-brown);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+}
