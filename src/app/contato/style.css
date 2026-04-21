@@ -50,16 +50,30 @@
   position: relative;
 }
 
+
 .team-card__image {
+  position: relative;
   width: 100%;
   aspect-ratio: 3 / 4;
-  background: linear-gradient(
-    180deg,
-    rgba(75, 46, 43, 0.85),
-    rgba(75, 46, 43, 0.95)
-  );
-  margin-bottom: 20px;
+  background: transparent;        /* REMOVE fundo marrom */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 4px solid var(--color-cream); /* BORDA clara */
 }
+
+
+.team-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        /* ocupa tudo */
+  object-position: center; /* centraliza */
+  display: block;
+}
+
+
 
 /* Nome e função */
 .team-card__role {

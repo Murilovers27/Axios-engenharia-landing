@@ -1,6 +1,38 @@
+"use client"
+
+import { useEffect, useState } from "react"
 import "./style.css"
 
+const images = [
+  {
+    src: "/images/Hero/hero-01.png",
+    alt: "Projeto industrial",
+    badge: "Engenharia industrial",
+  },
+  {
+    src: "/images/Hero/hero-envase.jpg",
+    alt: "Sistemas de envase",
+    badge: "Sistemas de envase",
+  },
+  {
+    src: "/images/Hero/Nicolau.jpg",
+    alt: "Automação industrial",
+    badge: "Automação industrial",
+  },
+  
+]
+
 export default function Hero() {
+  const [current, setCurrent] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % images.length)
+    }, 5000)
+
+    return () => clearInterval(interval)
+  }, [])
+
   return (
     <section className="hero">
       <div className="hero__bg-shape hero__bg-shape--top" />
@@ -58,23 +90,39 @@ export default function Hero() {
           <div className="hero__media-circle" />
 
           <div className="hero__media-card">
-            <img
-              src="/images/Hero/hero-01.png"
-              alt="Projeto industrial"
-              className="hero__image"
-            />
+  <img
+    src={images[current].src}
+    alt={images[current].alt}
+    className="hero__image"
+  />
 
-            <div className="hero__badge">Engenharia industrial</div>
+  <div className="hero__badge">
+    {images[current].badge}
+  </div>
 
-            <div className="hero__floating-card hero__floating-card--top">
-              <span>Desenvolvimento</span>
-              <strong>Produto e processo</strong>
-            </div>
+  <div className="hero__floating-card hero__floating-card--top">
+    <span>Desenvolvimento</span>
+    <strong>Produto e processo</strong>
+  </div>
 
-            <div className="hero__floating-card hero__floating-card--bottom">
-              <span>Atuação técnica</span>
-              <strong>Planejamento, projeto e acompanhamento</strong>
-            </div>
+  <div className="hero__floating-card hero__floating-card--bottom">
+    <span>Axios</span>
+    <strong>
+      Nos mostre teu desafio. Nós resolvemos.
+    </strong>
+  </div>
+</div>
+
+          {/* Indicadores */}
+          <div className="hero__dots">
+            {images.map((_, index) => (
+              <button
+                key={index}
+                className={index === current ? "active" : ""}
+                onClick={() => setCurrent(index)}
+                aria-label={`Imagem ${index + 1}`}
+              />
+            ))}
           </div>
         </div>
       </div>

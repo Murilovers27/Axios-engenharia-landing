@@ -1,4 +1,4 @@
-import "./stayle.css"
+import "./style.css"
 
 export default function Contato() {
   return (
@@ -7,7 +7,7 @@ export default function Contato() {
         <header className="team__header">
           <h1>Conte com um time de especialistas</h1>
           <a href="#" className="team__cta">
-            
+            Conheça toda a equipe →
           </a>
         </header>
 
@@ -15,18 +15,20 @@ export default function Contato() {
           {/* Engenheiro 1 */}
           <article className="team-card">
             <div className="team-card__image">
-              /* <img src="/images/Eng/luiz.jpg" alt="Engenheiro responsável" /> */
+              <img
+                src="/images/Eng/Nicolau.jpg"
+                alt="Engenheiro responsável"
+              />
             </div>
 
             <span className="team-card__role">Engenheiro</span>
-            <h2 className="team-card__name">Engenheiro Responsável</h2>
+            <h2 className="team-card__name">Robson Nicolau</h2>
 
             <a
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
               className="team-card__linkedin"
-              aria-label="LinkedIn"
             >
               in
             </a>
@@ -35,18 +37,22 @@ export default function Contato() {
           {/* Engenheiro 2 */}
           <article className="team-card">
             <div className="team-card__image">
-               <img src="/images/Eng/Nicolau.jpg" alt="Engenheiro responsável" /> 
+              <img
+                src="/images/Eng/Luiz.jpg"
+                alt="Engenheiro responsável"
+                
+              />
             </div>
 
             <span className="team-card__role">Engenheiro</span>
-            <h2 className="team-card__name">Engenheiro Responsável</h2>
+            <h2 className="team-card__name">
+              Luiz Fernando </h2>
 
             <a
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
               className="team-card__linkedin"
-              aria-label="LinkedIn"
             >
               in
             </a>
