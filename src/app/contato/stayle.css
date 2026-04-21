@@ -1,0 +1,116 @@
+.team {
+  background: var(--color-cream);
+  padding: 96px 0;
+}
+
+.team__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.team__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 64px;
+}
+
+.team__header h1 {
+  font-size: clamp(2.4rem, 4vw, 3.6rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  color: var(--color-brown);
+  max-width: 520px;
+}
+
+.team__cta {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--color-red);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: opacity 0.2s ease;
+}
+
+.team__cta:hover {
+  opacity: 0.8;
+}
+
+/* Grid */
+.team__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+}
+
+/* Card */
+.team-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.team-card__image {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: linear-gradient(
+    180deg,
+    rgba(75, 46, 43, 0.85),
+    rgba(75, 46, 43, 0.95)
+  );
+  margin-bottom: 20px;
+}
+
+/* Nome e função */
+.team-card__role {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(75, 46, 43, 0.6);
+}
+
+.team-card__name {
+  margin-top: 6px;
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: var(--color-brown);
+}
+
+/* LinkedIn */
+.team-card__linkedin {
+  margin-top: 14px;
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: var(--color-red);
+  color: var(--color-white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 0.8rem;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .team__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .team {
+    padding: 72px 0;
+  }
+
+  .team__grid {
+    grid-template-columns: 1fr;
+  }
+}

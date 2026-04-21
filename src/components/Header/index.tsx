@@ -33,7 +33,7 @@ export default function Header() {
         </nav>
 
         <a
-          href="https://wa.me/55XXXXXXXXXX"
+          href="/contato"
           target="_blank"
           rel="noopener noreferrer"
           className="header__cta"

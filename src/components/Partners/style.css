@@ -1,6 +1,6 @@
 .partners {
   position: relative;
-  background: var(--color-brown);
+  background: var(--color-soft);
   padding: 120px 0;
   color: var(--color-cream);
 }
@@ -8,7 +8,7 @@
 .partners__overlay {
   position: absolute;
   inset: 0;
-  background: var(--color-cream)
+  background: var(--color-soft)
 }
 
 .partners__inner {

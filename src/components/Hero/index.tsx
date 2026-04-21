@@ -59,7 +59,7 @@ export default function Hero() {
 
           <div className="hero__media-card">
             <img
-              src="/images/hero-1.jpg"
+              src="/images/Hero/hero-01.png"
               alt="Projeto industrial"
               className="hero__image"
             />

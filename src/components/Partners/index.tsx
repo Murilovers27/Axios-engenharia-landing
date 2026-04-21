@@ -22,7 +22,7 @@ export default function Partners() {
     rel="noopener noreferrer"
     className="partners__logo-card"
   >
-    <img src="/images/parceiro-1.png" alt="Parceiro 1" />
+    <img src="/images/Partners/parceiro-1.png" alt="Parceiro 1" />
   </a>
 
   <a
@@ -31,7 +31,7 @@ export default function Partners() {
     rel="noopener noreferrer"
     className="partners__logo-card"
   >
-    <img src="/images/parceiro-2.svg" alt="Parceiro 2" />
+    <img src="/images/Partners/parceiro-2.svg" alt="Parceiro 2" />
   </a>
 
   <a
@@ -40,7 +40,7 @@ export default function Partners() {
     rel="noopener noreferrer"
     className="partners__logo-card partners__logo-card--large"
   >
-    <img src="/images/parceiro-3.png" alt="Parceiro 3" />
+    <img src="/images/Partners/parceiro-3.png" alt="Parceiro 3" />
   </a>
 
   <a
@@ -49,7 +49,7 @@ export default function Partners() {
     rel="noopener noreferrer"
     className="partners__logo-card"
   >
-    <img src="/images/parceiro-4.png" alt="Parceiro 4" />
+    <img src="/images/Partners/parceiro-4.png" alt="Parceiro 4" />
   </a>
 
   <a
@@ -58,7 +58,7 @@ export default function Partners() {
     rel="noopener noreferrer"
     className="partners__logo-card"
   >
-    <img src="/images/parceiro-5.png" alt="Parceiro 5" />
+    <img src="/images/Partners/parceiro-5.png" alt="Parceiro 5" />
   </a>
 </div>
 
@@ -66,4 +66,3 @@ export default function Partners() {
     </section>
   )
 }
-``
